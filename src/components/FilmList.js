@@ -3,11 +3,19 @@ import FilmInfo from "./FilmInfo";
 
 class FilmList extends Component {
   render() {
+    const filmNodes = this.props.films.map((film) => {
+      return (
+        <FilmInfo key={film.id} src={film.url}>
+          {film.name}
+        </FilmInfo>
+      );
+    });
+
     return (
-      <div className="film-list">
+      <ul className="film-list">
         <h2>Films</h2>
-        <FilmInfo></FilmInfo>
-      </div>
+        {filmNodes}
+      </ul>
     );
   }
 }
