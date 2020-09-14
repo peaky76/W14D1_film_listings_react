@@ -19,3 +19,9 @@ li {
   margin: 2rem;
   list-style-type: square;
 }
+
+.more-link {
+  background-color: wheat;
+  border: 0.25rem dotted brown;
+  padding: 1rem;
+}

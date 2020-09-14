@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import FilmList from "../components/FilmList";
+import MoreLink from "../components/MoreLink";
 
 class FilmReleases extends Component {
   constructor() {
@@ -39,6 +40,7 @@ class FilmReleases extends Component {
       <>
         <h1>Latest UK film releases</h1>
         <FilmList films={this.state.films}></FilmList>
+        <MoreLink />
       </>
     );
   }
