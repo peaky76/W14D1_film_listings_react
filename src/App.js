@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
+import FilmReleases from "./containers/FilmReleases";
 
 function App() {
-  return <h1>Hello world!</h1>;
+  return <FilmReleases />;
 }
 
 export default App;
